@@ -47,67 +47,86 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="text-center mb-5">
-            <h1>스마트폰 기초</h1>
-            <p class="lead">전화, 문자, 설정, 필수 앱 다운로드 등 스마트폰의 가장 기본적인 사용법을 배워봅니다.</p>
+            <h1 class="display-4 fw-bold">스마트폰 기초 다지기</h1>
+            <p class="lead">스마트폰과 친해지는 첫걸음, 여기서 시작하세요!</p>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <!-- 전화 걸고 받기 Section -->
-                <section id="call" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">1. 전화 걸고 받기</h2>
-                    <p class="lead">스마트폰의 가장 기본적인 기능, 전화 걸고 받는 방법을 알아봅니다.</p>
-                    <h3 class="mt-4">전화 걸기</h3>
-                    <ol>
-                        <li><strong>전화 앱 열기:</strong> 홈 화면에서 <span class="badge bg-primary">전화</span> 아이콘을 찾아서 누릅니다.</li>
-                        <li><strong>번호 입력:</strong> 숫자 키패드가 나타나면 전화할 번호를 누릅니다.</li>
-                        <li><strong>통화 버튼 누르기:</strong> 초록색 <span class="badge bg-success">통화</span> 버튼을 누르면 전화가 걸립니다.</li>
-                    </ol>
-                    <h3 class="mt-4">전화 받기</h3>
-                    <ol>
-                        <li><strong>초록색 버튼 밀기:</strong> 전화가 오면 화면에 초록색 <span class="badge bg-success">받기</span> 버튼이 나타납니다. 이 버튼을 오른쪽으로 밀거나 누릅니다.</li>
-                        <li><strong>빨간색 버튼 밀기:</strong> 전화를 받기 싫을 때는 빨간색 <span class="badge bg-danger">거절</span> 버튼을 왼쪽으로 밀거나 누릅니다.</li>
-                    </ol>
-                    <h3 class="mt-4">연락처 저장하기</h3>
-                    <ol>
-                        <li><strong>새 연락처 추가:</strong> 전화 앱에서 <span class="badge bg-info">연락처</span> 탭으로 이동 후 <span class="badge bg-info">+</span> 또는 <span class="badge bg-info">새 연락처</span> 버튼을 누릅니다.</li>
-                        <li><strong>정보 입력:</strong> 이름, 전화번호 등을 입력하고 <span class="badge bg-primary">저장</span>을 누릅니다.</li>
-                    </ol>
-                </section>
+        <!-- 1. 스마트폰 기본 용어 설명 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-header">
+                <h2 class="display-5">1. 스마트폰 기본 용어</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">어려운 용어, 쉽게 이해해봐요. 우리 집 물건에 비유해볼게요.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>터치:</strong> '가볍게 누르기'. 현관문 벨을 누르듯, 손가락으로 화면을 한 번 '톡' 누르는 거예요.</li>
+                    <li class="list-group-item"><strong>스와이프:</strong> '쓸어 넘기기'. 책장을 넘기듯, 손가락으로 화면을 가볍게 밀어내는 동작이에요.</li>
+                    <li class="list-group-item"><strong>앱 (애플리케이션):</strong> '기능이 담긴 도구'. 텔레비전의 채널처럼, '전화 앱', '문자 앱', '사진 앱' 등 각기 다른 기능을 가진 프로그램이에요.</li>
+                </ul>
+            </div>
+        </div>
 
-                <!-- 문자 메시지 보내기 Section -->
-                <section id="message" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">2. 문자 메시지 보내기</h2>
-                    <p class="lead">가족이나 친구에게 간단한 안부나 정보를 문자로 주고받는 방법을 배워봅니다.</p>
-                    <h3 class="mt-4">문자 앱 열기</h3>
-                    <ol>
-                        <li><strong>메시지 앱 찾기:</strong> 홈 화면에서 <span class="badge bg-primary">메시지</span> 또는 <span class="badge bg-primary">문자</span> 아이콘을 찾아서 누릅니다.</li>
-                        <li><strong>새 메시지 작성:</strong> 화면 오른쪽 아래에 있는 <span class="badge bg-success">+</span> 또는 <span class="badge bg-success">새 메시지</span> 버튼을 누릅니다.</li>
-                    </ol>
-                    <h3 class="mt-4">메시지 작성 및 전송</h3>
-                    <ol>
-                        <li><strong>받는 사람 입력:</strong> '받는 사람' 칸에 상대방의 전화번호를 직접 입력하거나, <span class="badge bg-info">연락처</span> 버튼을 눌러 저장된 연락처에서 선택합니다.</li>
-                        <li><strong>내용 입력:</strong> '메시지 입력' 칸에 보낼 내용을 적습니다.</li>
-                        <li><strong>보내기 버튼 누르기:</strong> 작성한 메시지 옆의 <span class="badge bg-primary">전송</span> 또는 <span class="badge bg-primary">화살표</span> 아이콘을 누르면 메시지가 보내집니다.</li>
-                    </ol>
-                </section>
+        <!-- 2. 필수 설정 3가지 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-header">
+                <h2 class="display-5">2. 이것만은 꼭! 필수 설정 3가지</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">스마트폰을 더 편안하게 사용하기 위한 기본 설정입니다.</p>
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">와이파이(Wi-Fi) 연결하기</div>
+                            데이터 요금을 아낄 수 있는 공용 인터넷에 연결하는 방법입니다.
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">글자 크기 키우기</div>
+                            작은 글씨가 불편하다면, 눈이 편안하도록 글자 크기를 조절하세요.
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">알림 설정하기</div>
+                            중요한 알림만 받고, 불필요한 알림은 꺼두어 방해받지 않도록 설정합니다.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-                <!-- 필수 앱 설치하기 Section -->
-                <section id="apps" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">3. 필수 앱 설치하기</h2>
-                    <p class="lead">스마트폰을 더욱 편리하게 만들어주는 유용한 앱들을 설치하고 사용하는 방법을 알아봅니다.</p>
-                    <h3 class="mt-4">앱 스토어 열기</h3>
-                    <ol>
-                        <li><strong>스토어 앱 찾기:</strong> 안드로이드폰은 <span class="badge bg-success">Play 스토어</span>, 아이폰은 <span class="badge bg-primary">App Store</span> 아이콘을 찾아서 누릅니다.</li>
-                    </ol>
-                    <h3 class="mt-4">앱 검색 및 설치</h3>
-                    <ol>
-                        <li><strong>앱 검색:</strong> 화면 상단의 <span class="badge bg-info">검색</span> 창에 설치하고 싶은 앱 이름(예: 카카오톡, 유튜브)을 입력하고 돋보기 아이콘을 누릅니다.</li>
-                        <li><strong>앱 선택:</strong> 검색 결과에서 원하는 앱을 찾아 누릅니다.</li>
-                        <li><strong>설치 버튼 누르기:</strong> <span class="badge bg-success">설치</span> 또는 <span class="badge bg-primary">받기</span> 버튼을 누르면 앱이 다운로드되고 자동으로 설치됩니다.</li>
-                        <li><strong>앱 실행:</strong> 설치가 완료되면 <span class="badge bg-success">열기</span> 버튼을 누르거나, 홈 화면에 새로 생긴 앱 아이콘을 눌러 실행할 수 있습니다.</li>
-                    </ol>
-                </section>
+        <!-- 3. 전화/문자 사용법 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-header">
+                <h2 class="display-5">3. 전화와 문자 사용법</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">가장 기본적이면서 중요한 기능이죠. 음성 인식으로 더 쉽게 사용해봐요.</p>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>전화 걸기:</strong> 전화 앱을 열고, 키패드로 번호를 누르거나 저장된 이름을 찾아 통화 버튼을 누릅니다.</li>
+                    <li class="list-group-item"><strong>음성으로 전화 걸기:</strong> "시리야" 또는 "오케이 구글"을 부른 뒤, "엄마에게 전화 걸어줘" 라고 말해보세요.</li>
+                    <li class="list-group-item"><strong>문자 보내기:</strong> 문자 앱에서 받는 사람을 선택하고 내용을 입력한 뒤 보내기 버튼을 누릅니다.</li>
+                    <li class="list-group-item"><strong>음성으로 문자 보내기:</strong> 음성 인식 기능을 켜고 "아들에게 사랑한다고 문자 보내줘" 라고 말하면 자동으로 입력됩니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. 앱 설치와 관리 -->
+        <div class="card mb-5 shadow-sm">
+            <div class="card-header">
+                <h2 class="display-5">4. 앱 설치와 관리</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">스마트폰을 더욱 스마트하게 만들어주는 필수 앱들을 추천하고 관리하는 법을 알아봅니다.</p>
+                <h5 class="card-title mt-4">어르신 필수 앱 5가지 추천</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>카카오톡:</strong> 가족, 친구와 무료로 대화하고 사진을 주고받으세요.</li>
+                    <li class="list-group-item"><strong>유튜브:</strong> 트로트, 뉴스, 건강 정보 등 세상의 모든 영상을 볼 수 있어요.</li>
+                    <li class="list-group-item"><strong>네이버 지도:</strong> 길을 찾거나 버스 도착 시간을 확인할 때 유용합니다.</li>
+                    <li class="list-group-item"><strong>건강보험심사평가원 '건강e음':</strong> 내가 다니는 병원 정보와 약값 등을 확인할 수 있어요.</li>
+                    <li class="list-group-item"><strong>돋보기 앱:</strong> 작은 글씨를 크게 볼 수 있어 유용합니다.</li>
+                </ul>
             </div>
         </div>
 

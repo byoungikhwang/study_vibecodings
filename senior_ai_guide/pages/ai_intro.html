@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 첫걸음 - 시니어 디지털 가이드</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
@@ -47,60 +48,95 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="text-center mb-5">
-            <h1>AI 첫걸음</h1>
-            <p class="lead">챗봇, 이미지 AI 등 신기하고 재미있는 인공지능 도구들을 사용하는 방법을 알아봅니다.</p>
+            <h1 class="display-4 fw-bold">AI 첫걸음, 나도 할 수 있다!</h1>
+            <p class="lead">인공지능(AI)은 더 이상 어려운 기술이 아니에요. 우리 삶을 도와주는 똑똑한 비서랍니다.</p>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <!-- AI란 무엇인가요? Section -->
-                <section id="what-is-ai" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">1. AI란 무엇인가요?</h2>
-                    <p class="lead">인공지능(AI)은 컴퓨터가 사람처럼 생각하고 배우고 판단하는 기술입니다. 우리 생활 곳곳에서 AI를 만나볼 수 있어요.</p>
-                    <h3 class="mt-4">AI의 쉬운 예시</h3>
-                    <ul>
-                        <li><strong>스마트폰 음성 비서:</strong> "헤이 시리" 또는 "빅스비"처럼 말로 명령하면 스마트폰이 알아서 정보를 찾아주거나 기능을 실행합니다.</li>
-                        <li><strong>번역 앱:</strong> 외국어를 한국어로, 한국어를 외국어로 바꿔주는 앱도 AI 기술을 사용합니다.</li>
-                        <li><strong>추천 시스템:</strong> 유튜브에서 재미있는 영상을 추천해주거나, 온라인 쇼핑몰에서 좋아할 만한 상품을 보여주는 것도 AI 덕분입니다.</li>
-                    </ul>
-                    <p>AI는 어렵고 먼 이야기가 아니라, 이미 우리 삶을 편리하게 만들어주는 친근한 기술입니다.</p>
-                </section>
+        <div class="accordion" id="aiIntroAccordion">
+            <!-- 1. AI란 무엇일까요? -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-question-circle-fill me-3"></i> 1. AI란 무엇일까요?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        <strong>AI는 '인공지능'의 줄임말이에요.</strong> 컴퓨터가 사람처럼 생각하고, 배우고, 판단하는 기술을 말하죠. <br><br>
+                        마치 <strong>'똑똑한 개인 비서'</strong>가 생긴 것과 같아요. 우리가 시키는 일을 척척 해내고, 궁금한 것을 물어보면 대답도 잘해준답니다. 이미 우리 주변의 스마트폰, TV, 냉장고 등 많은 곳에서 AI가 활약하고 있어요.
+                    </div>
+                </div>
+            </div>
 
-                <!-- 챗봇 사용하기 Section -->
-                <section id="chatbot" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">2. 챗봇 사용하기</h2>
-                    <p class="lead">챗봇은 사람과 대화하듯이 정보를 얻거나 질문에 대한 답변을 받을 수 있는 인공지능 프로그램입니다.</p>
-                    <h3 class="mt-4">챗봇의 종류</h3>
-                    <ul>
-                        <li><strong>정보 검색 챗봇:</strong> 궁금한 것을 물어보면 인터넷에서 정보를 찾아 알려줍니다. (예: ChatGPT, Gemini)</li>
-                        <li><strong>고객 상담 챗봇:</strong> 은행이나 통신사 웹사이트에서 간단한 질문에 답변해주거나 문제를 해결해줍니다.</li>
-                    </ul>
-                    <h3 class="mt-4">챗봇과 대화하는 방법</h3>
-                    <ol>
-                        <li><strong>챗봇 앱 또는 웹사이트 접속:</strong> 스마트폰에 챗봇 앱을 설치하거나, 컴퓨터로 챗봇 웹사이트에 접속합니다.</li>
-                        <li><strong>질문 입력:</strong> 대화창에 궁금한 내용을 글로 입력하고 <span class="badge bg-primary">전송</span> 버튼을 누릅니다.</li>
-                        <li><strong>답변 확인:</strong> 챗봇이 질문에 대한 답변을 보여줍니다. 추가 질문을 할 수도 있습니다.</li>
-                    </ol>
-                    <p class="alert alert-warning"><strong>팁:</strong> 챗봇에게 질문할 때는 구체적으로 물어볼수록 더 정확한 답변을 얻을 수 있습니다.</p>
-                </section>
+            <!-- 2. 챗봇(Chatbot) 활용법 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-chat-dots-fill me-3"></i> 2. 챗봇(Chatbot) 활용법
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        챗봇은 '대화하는 로봇'이에요. 궁금한 것을 물어보면 대화로 답을 찾아주죠.
+                        <h5 class="mt-4">이렇게 활용해보세요:</h5>
+                        <figure class="mt-3">
+                            <blockquote class="blockquote">
+                                <p>"손주에게 보낼 재치 있는 생일 축하 문자 메시지 추천해줘."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                챗봇에게 요청
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>"오늘 저녁 메뉴로 만들 만한 간단한 김치찌개 레시피 알려줘."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                챗봇에게 요청
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-                <!-- 이미지 AI 체험하기 Section -->
-                <section id="image-ai" class="mb-5 p-4 border rounded-3 bg-white">
-                    <h2 class="mb-3 text-primary">3. 이미지 AI 체험하기</h2>
-                    <p class="lead">이미지 AI는 글이나 그림을 입력하면 새로운 이미지를 만들어주거나, 사진을 보정해주는 인공지능입니다.</p>
-                    <h3 class="mt-4">이미지 AI의 활용</h3>
-                    <ul>
-                        <li><strong>그림 생성:</strong> "푸른 바다 위를 나는 용"처럼 글로 설명하면 AI가 그에 맞는 그림을 그려줍니다.</li>
-                        <li><strong>사진 보정:</strong> 오래된 사진을 깨끗하게 만들거나, 흐릿한 사진을 선명하게 바꿔줍니다.</li>
-                    </ul>
-                    <h3 class="mt-4">간단한 이미지 AI 사용 예시</h3>
-                    <ol>
-                        <li><strong>이미지 AI 웹사이트 접속:</strong> (예: 구글 이미지 생성기, 미드저니 등)</li>
-                        <li><strong>설명 입력:</strong> "아름다운 꽃밭에 앉아있는 고양이"처럼 만들고 싶은 그림을 글로 설명합니다.</li>
-                        <li><strong>이미지 생성 버튼 클릭:</strong> AI가 몇 초 안에 설명에 맞는 이미지를 만들어줍니다.</li>
-                    </ol>
-                    <p class="alert alert-success"><strong>재미있는 활동:</strong> 손주나 친구에게 보여줄 특별한 그림을 AI로 만들어보세요!</p>
-                </section>
+            <!-- 3. AI 이미지 생성 체험 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-image-fill me-3"></i> 3. AI 이미지 생성 체험
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        상상하는 모든 것을 그림으로 만들 수 있어요. AI에게 말로 설명만 해주면 된답니다.
+                        <h5 class="mt-4">예를 들어 이렇게 말해보세요:</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">"푸른 초원에서 뛰어노는 귀여운 강아지"</li>
+                            <li class="list-group-item">"아름다운 노을이 지는 바닷가 풍경"</li>
+                            <li class="list-group-item">"우리 가족의 행복한 모습을 담은 동화 같은 그림"</li>
+                        </ul>
+                        <p class="mt-3">이렇게 간단히 설명하면 AI가 멋진 그림을 뚝딱 만들어줄 거예요!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. AI 시대의 안전 수칙 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="bi bi-shield-lock-fill me-3"></i> 4. AI 시대의 안전 수칙
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        AI는 편리하지만, 안전하게 사용하는 것이 중요해요.
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item list-group-item-danger"><strong>개인 정보는 절대 입력하지 마세요.</strong><br>주민등록번호, 집 주소, 은행 비밀번호 등 중요한 개인 정보는 챗봇이나 AI에게 절대 알려주면 안 됩니다.</li>
+                            <li class="list-group-item list-group-item-warning"><strong>AI의 답변을 100% 믿지 마세요.</strong><br>AI는 가끔 틀린 정보를 알려줄 수도 있어요. 중요한 정보는 한 번 더 확인하는 습관을 들이세요.</li>
+                            <li class="list-group-item list-group-item-info"><strong>낯선 링크나 파일은 열지 마세요.</strong><br>AI를 사칭한 사기(피싱)일 수 있으니, 출처가 불분명한 링크나 파일은 절대 누르지 마세요.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
