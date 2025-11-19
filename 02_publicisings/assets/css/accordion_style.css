@@ -1,0 +1,141 @@
+/* =======================================
+   1. Basic Reset and Layout
+   ======================================= */
+body {
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f4f7f9; /* 배경색 변경: 밝고 깨끗한 느낌 */
+    color: #333;
+}
+
+h1 {
+    color: #1e40af; /* 강조색 사용 */
+    text-align: center;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+/* =======================================
+   2. Accordion Structure and Styling
+   ======================================= */
+.accordion-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* 부드러운 카드형 그림자 */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    cursor: pointer;
+    background-color: #e0f2fe; /* 헤더 배경색: 밝은 파란색 */
+    color: #1e40af;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+    background-color: #bae6fd;
+}
+
+.accordion-icon {
+    font-size: 1.5em;
+    font-weight: normal;
+    transition: transform 0.3s ease;
+    margin-left: 15px;
+}
+
+/* Content (Hidden by default) */
+.accordion-content {
+    padding: 0 25px;
+    max-height: 0; /* 초기 상태: 닫힘 */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    background-color: #fff;
+}
+
+/* Active State */
+.accordion-item.active .accordion-header {
+    background-color: #93c5fd; /* 활성화된 헤더 색상 */
+    color: #1e40af;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg); /* 아이콘 회전: 닫힘에서 열림 (+) -> (x/회전) */
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 1000px; /* 충분히 큰 값으로 설정 */
+    padding: 20px 25px 20px 25px;
+}
+
+/* =======================================
+   3. Table Styling (Chatbot Section)
+   ======================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #d1e4fa; /* 헤더 색상 개선 */
+    color: #1e40af;
+    font-weight: bold;
+}
+
+/* 홀수/짝수 행 배경색 미세 구분 */
+tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+/* =======================================
+   4. Responsive Design
+   ======================================= */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .accordion-header {
+        font-size: 1em;
+        padding: 15px 18px;
+    }
+    th, td {
+        padding: 10px;
+        display: block; /* 모바일에서 테이블 세로로 쌓기 */
+        width: 100%;
+    }
+    /* 모바일에서 테이블 헤더를 내용 앞에 다시 표시 */
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        color: #1e40af;
+    }
+    th {
+        display: none; /* 모바일에서 원래 헤더 숨기기 */
+    }
+}
