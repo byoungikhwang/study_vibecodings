@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 첫걸음 - 시니어 디지털 가이드</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">디지털 독립 만세</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">홈</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            AI 학습 가이드
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../guide.html#basic-theory">기초 이론</a></li>
+                            <li><a class="dropdown-item" href="../guide.html#modeling-practice">모델링 실습</a></li>
+                            <li><a class="dropdown-item" href="../guide.html#deployment-strategy">배포 전략</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../admin/data-crud.html">자료 관리 (CRUD)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../admin/dashboard.html">관리자 대시보드</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">AI 첫걸음, 나도 할 수 있다!</h1>
+            <p class="lead">인공지능(AI)은 더 이상 어려운 기술이 아니에요. 우리 삶을 도와주는 똑똑한 비서랍니다.</p>
+        </div>
+
+        <div class="accordion" id="aiIntroAccordion">
+            <!-- 1. AI란 무엇일까요? -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="bi bi-question-circle-fill me-3"></i> 1. AI란 무엇일까요?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        <strong>AI는 '인공지능'의 줄임말이에요.</strong> 컴퓨터가 사람처럼 생각하고, 배우고, 판단하는 기술을 말하죠. <br><br>
+                        마치 <strong>'똑똑한 개인 비서'</strong>가 생긴 것과 같아요. 우리가 시키는 일을 척척 해내고, 궁금한 것을 물어보면 대답도 잘해준답니다. 이미 우리 주변의 스마트폰, TV, 냉장고 등 많은 곳에서 AI가 활약하고 있어요.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. 챗봇(Chatbot) 활용법 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="bi bi-chat-dots-fill me-3"></i> 2. 챗봇(Chatbot) 활용법
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        챗봇은 '대화하는 로봇'이에요. 궁금한 것을 물어보면 대화로 답을 찾아주죠.
+                        <div class="text-center my-3">
+                            <img src="../assets/images/AI First Steps.png" class="img-fluid rounded" alt="챗봇 대화 예시">
+                        </div>
+                        <h5 class="mt-4">이렇게 활용해보세요:</h5>
+                        <figure class="mt-3">
+                            <blockquote class="blockquote">
+                                <p>"손주에게 보낼 재치 있는 생일 축하 문자 메시지 추천해줘."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                챗봇에게 요청
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>"오늘 저녁 메뉴로 만들 만한 간단한 김치찌개 레시피 알려줘."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                챗봇에게 요청
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. AI 이미지 생성 체험 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="bi bi-image-fill me-3"></i> 3. AI 이미지 생성 체험
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        상상하는 모든 것을 그림으로 만들 수 있어요. AI에게 말로 설명만 해주면 된답니다.
+                        <div class="text-center my-3">
+                            <img src="../assets/images/Gemini_Generated_Image_4oyg2i4oyg2i4oyg (3).png" class="img-fluid rounded" alt="AI 이미지 생성">
+                        </div>
+                        <h5 class="mt-4">예를 들어 이렇게 말해보세요:</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">"푸른 초원에서 뛰어노는 귀여운 강아지"</li>
+                            <li class="list-group-item">"아름다운 노을이 지는 바닷가 풍경"</li>
+                            <li class="list-group-item">"우리 가족의 행복한 모습을 담은 동화 같은 그림"</li>
+                        </ul>
+                        <p class="mt-3">이렇게 간단히 설명하면 AI가 멋진 그림을 뚝딱 만들어줄 거예요!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. AI 시대의 안전 수칙 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="bi bi-shield-lock-fill me-3"></i> 4. AI 시대의 안전 수칙
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#aiIntroAccordion">
+                    <div class="accordion-body">
+                        AI는 편리하지만, 안전하게 사용하는 것이 중요해요.
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item list-group-item-danger"><strong>개인 정보는 절대 입력하지 마세요.</strong><br>주민등록번호, 집 주소, 은행 비밀번호 등 중요한 개인 정보는 챗봇이나 AI에게 절대 알려주면 안 됩니다.</li>
+                            <li class="list-group-item list-group-item-warning"><strong>AI의 답변을 100% 믿지 마세요.</strong><br>AI는 가끔 틀린 정보를 알려줄 수도 있어요. 중요한 정보는 한 번 더 확인하는 습관을 들이세요.</li>
+                            <li class="list-group-item list-group-item-info"><strong>낯선 링크나 파일은 열지 마세요.</strong><br>AI를 사칭한 사기(피싱)일 수 있으니, 출처가 불분명한 링크나 파일은 절대 누르지 마세요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">홈</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-2 text-muted" href="#" id="navbarDropdownMenuLinkFooter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    AI 학습 가이드
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkFooter">
+                    <li><a class="dropdown-item" href="../guide.html#basic-theory">기초 이론</a></li>
+                    <li><a class="dropdown-item" href="../guide.html#modeling-practice">모델링 실습</a></li>
+                    <li><a class="dropdown-item" href="../guide.html#deployment-strategy">배포 전략</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="../admin/data-crud.html" class="nav-link px-2 text-muted">자료 관리 (CRUD)</a></li>
+            <li class="nav-item"><a href="../admin/dashboard.html" class="nav-link px-2 text-muted">관리자 대시보드</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2025 디지털 독립 만세</p>
+        <button id="backToTopBtn" class="btn btn-primary rounded-circle shadow" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+        </button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
